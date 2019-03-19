@@ -1,7 +1,7 @@
 import * as admin from "firebase-admin";
 import twilio from "./twilio";
 
-const FROM_PHONE = "+12015488017";
+const FROM_PHONE = "+15005550006";
 
 export default (req, res) => {
   if (!req.body.phone) {
@@ -19,7 +19,7 @@ export default (req, res) => {
       twilio.messages.create(
         {
           from: FROM_PHONE,
-          to: phone,
+          to: `+${phone}`,
           body: `Your code is ${code}`
         },
         err => {
