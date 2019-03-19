@@ -1,0 +1,60 @@
+[debug] [2019-03-19T16:56:15.580Z] ----------------------------------------------------------------------
+[debug] [2019-03-19T16:56:15.583Z] Command:       /Users/jterrazz/.nvm/versions/node/v6.17.0/bin/node /Users/jterrazz/.nvm/versions/node/v6.17.0/bin/firebase deploy --project react-native-authenticat-a761d
+[debug] [2019-03-19T16:56:15.583Z] CLI Version:   6.5.0
+[debug] [2019-03-19T16:56:15.583Z] Platform:      darwin
+[debug] [2019-03-19T16:56:15.583Z] Node Version:  v6.17.0
+[debug] [2019-03-19T16:56:15.583Z] Time:          Tue Mar 19 2019 17:56:15 GMT+0100 (CET)
+[debug] [2019-03-19T16:56:15.583Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-19T16:56:15.596Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-19T16:56:15.597Z] > authorizing via signed-in user
+[debug] [2019-03-19T16:56:15.597Z] [iam] checking project react-native-authenticat-a761d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-03-19T16:56:15.599Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-19T16:56:15.600Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-19T16:56:15.760Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-19T16:56:15.786Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-authenticat-a761d:testIamPermissions  
+
+[debug] [2019-03-19T16:56:16.618Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-native-authenticat-a761d'...
+[info] 
+[info] i  deploying functions
+[debug] [2019-03-19T16:56:16.710Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.join (path.js:1217:7)
+    at Config.path (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/config.js:142:39)
+    at getChildEnvironment (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:50:49)
+    at runTargetCommands (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:71:14)
+    at /Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:103:24
+    at process._tickDomainCallback (internal/process/next_tick.js:135:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-19T16:56:21.418Z] ----------------------------------------------------------------------
+[debug] [2019-03-19T16:56:21.421Z] Command:       /Users/jterrazz/.nvm/versions/node/v6.17.0/bin/node /Users/jterrazz/.nvm/versions/node/v6.17.0/bin/firebase deploy --project react-native-authenticat-a761d
+[debug] [2019-03-19T16:56:21.421Z] CLI Version:   6.5.0
+[debug] [2019-03-19T16:56:21.421Z] Platform:      darwin
+[debug] [2019-03-19T16:56:21.421Z] Node Version:  v6.17.0
+[debug] [2019-03-19T16:56:21.421Z] Time:          Tue Mar 19 2019 17:56:21 GMT+0100 (CET)
+[debug] [2019-03-19T16:56:21.421Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-19T16:56:21.431Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-19T16:56:21.431Z] > authorizing via signed-in user
+[debug] [2019-03-19T16:56:21.432Z] [iam] checking project react-native-authenticat-a761d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-03-19T16:56:21.434Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-authenticat-a761d:testIamPermissions  
+
+[debug] [2019-03-19T16:56:22.261Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-native-authenticat-a761d'...
+[info] 
+[info] i  deploying functions
+[debug] [2019-03-19T16:56:22.356Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.join (path.js:1217:7)
+    at Config.path (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/config.js:142:39)
+    at getChildEnvironment (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:50:49)
+    at runTargetCommands (/Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:71:14)
+    at /Users/jterrazz/.nvm/versions/node/v6.17.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:103:24
+    at process._tickDomainCallback (internal/process/next_tick.js:135:7)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -3,9 +3,12 @@
 This projects features:
 
 - React native
-- Firebase Functions
-- Firebase Authentication
-- Firebase Admin
+- Axios
+- React native elements
+
+* Firebase Functions
+* Firebase Authentication
+* Firebase Admin
 
 ## Get started
 
